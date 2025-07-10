@@ -535,20 +535,20 @@ async function generatePDF(checklist) {
             title: 'ESPECIFICACIONES',
             fields: [
                 { label: 'Código de Diseño', value: checklist.ficha },
-                { label: 'Largo', value: checklist.largo || 'N/A' },
-                { label: 'Ancho', value: checklist.ancho || 'N/A' },
-                { label: 'Pigmento', value: checklist.pigmento || 'N/A' },
+                { label: 'Largo(mm)', value: checklist.largo || 'N/A' },
+                { label: 'Ancho(mm)', value: checklist.ancho || 'N/A' },
+                { label: 'Codigo Pigmento', value: checklist.pigmento || 'N/A' },
                 { label: 'Base', value: checklist.base || 'N/A' }
             ]
         },
         {
-            title: 'PARÁMETROS DE PRODUCCIÓN',
+            title: 'PARÁMETROS DE PRODUCCIÓN (si no es ocupado el cabezal 2, porfavor indicar 0)',
             fields: [
                 { label: 'Temperatura Cabezal 1', value: checklist.temp1 || 'N/A' },
                 { label: 'Temperatura Cabezal 2', value: checklist.temp2 || 'N/A' },
                 { label: 'Velocidad (mm/s)', value: checklist.velocidad || 'N/A' },
-                { label: 'Desperdicio Implícito', value: checklist.desperdicio1 || 'N/A' },
-                { label: 'Desperdicio Explícito', value: checklist.desperdicio2 || 'N/A' }
+                { label: 'Desperdicio Cuadre', value: checklist.desperdicio1 || 'N/A' },
+                { label: 'Desperdicio Extra', value: checklist.desperdicio2 || 'N/A' }
             ]
         }
     ];
