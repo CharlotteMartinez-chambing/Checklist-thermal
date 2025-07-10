@@ -1,2 +1,1 @@
-# Checklist-thermal
-CHECK LIST FORMAT FOR THERMAL
+checklist
